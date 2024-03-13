@@ -1,3 +1,46 @@
-h1 {
-  color: red;
+:root {
+  --branding-color: #d94b5a;
+  --secondary-color: #eccdce;
+  --text-color: #5b383b;
+  --main-font: "Poppins", sans-serif;
+  --secondary-font: "Playfair Display", serif;
+}
+
+header {
+  text-align: center;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/890/original/Design_sem_nome-4.png?1710346558");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--text-color);
+
+  padding: 200px 0;
+}
+
+header h1 {
+  font-family: var(--main-font);
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 60px;
+  letter-spacing: 8px;
+}
+
+header h1 span {
+  color: var(--branding-color);
+}
+
+header h3 {
+  font-family: var(--main-font);
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.explore-button {
+  background-color: var(--branding-color);
+  padding: 10px 40px;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  margin-top: 15px;
 }
