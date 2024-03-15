@@ -168,4 +168,8 @@ footer a {
     margin-left: auto;
     margin-right: auto;
   }
+
+  footer {
+    font-size: 10px;
+  }
 }
