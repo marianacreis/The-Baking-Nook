@@ -265,3 +265,44 @@ footer a {
   color: var(--text-color);
   line-height: 1.7;
 }
+
+@media (max-width: 819px) {
+  .recipes-page-header p {
+    width: 95%;
+  }
+
+  .recipes-buttons {
+    display: none;
+  }
+
+  .recipe-title-container {
+    padding: 0;
+    background-color: white;
+    margin-top: 30px;
+  }
+
+  .recipe-title-container p {
+    display: none;
+  }
+
+  .recipe-title-container h5 {
+    font-weight: 500;
+  }
+
+  .recipe-content-title {
+    display: none;
+    font-size: 12px;
+  }
+
+  .ingredients-method-line {
+    display: none;
+  }
+
+  .ingredients-list p {
+    font-size: 15px;
+  }
+
+  .recipe-method {
+    margin-top: 20px;
+  }
+}
