@@ -11,6 +11,7 @@ header {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/890/original/Design_sem_nome-4.png?1710346558");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100% 100%;
   color: var(--text-color);
   padding: 200px 0;
 }
@@ -67,7 +68,7 @@ h2 {
 }
 
 .about-us-line {
-  width: 850px;
+  width: 60%;
   margin: 20px auto 0;
   border: 1px solid var(--branding-color);
 }
@@ -120,4 +121,55 @@ footer a {
   text-decoration: none;
   color: white;
   font-family: var(--secondary-font);
+}
+
+@media (max-width: 1024px) {
+  header {
+    background: none;
+    background-color: var(--secondary-color);
+    padding: 100px 0;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  header h3 {
+    font-size: 20px;
+  }
+
+  .about-us-paragraph {
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .about-us-line {
+    width: 90%;
+  }
+
+  .recipe-images {
+    width: 300px;
+    margin-bottom: 15px;
+  }
+
+  .contact-container {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .contact-container h4 {
+    margin-left: 110px;
+  }
+
+  .contact-container p {
+    display: none;
+  }
+
+  .contact-us-link {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
