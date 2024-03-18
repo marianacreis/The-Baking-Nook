@@ -174,7 +174,7 @@ footer a {
   }
 }
 
-/* Recipes Pagen */
+/* Recipes Page */
 .recipes-page-header h1 {
   font-family: var(--main-font);
   color: var(--text-color);
@@ -214,7 +214,7 @@ footer a {
   padding: 30px 60px 0;
 }
 
-.recipe-title-container h5 {
+h5 {
   font-family: var(--main-font);
   font-weight: 200;
   text-transform: uppercase;
@@ -304,5 +304,55 @@ footer a {
 
   .recipe-method {
     margin-top: 20px;
+  }
+}
+
+/* Tips and Tricks Page */
+
+.tips-and-tricks-header h1 {
+  font-family: var(--main-font);
+  text-align: center;
+  margin: 0;
+}
+
+.tips-number-container {
+  background-color: var(--secondary-color);
+}
+
+.tips-number {
+  font-size: 120px;
+  text-align: center;
+  margin: 0;
+  color: white;
+  font-weight: 500;
+}
+
+.tips-content-container {
+  background-color: #eccdceb0;
+}
+
+.tips-text {
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 819px) {
+  .tips-number {
+    font-size: 25px;
+  }
+
+  .tips-content-container h5 {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .tips-text {
+    text-align: center;
+  }
+
+  .tips-and-tricks-containers {
+    width: 90%;
   }
 }
