@@ -113,8 +113,10 @@ footer {
   color: white;
   font-size: 10px;
   text-align: center;
-  margin-top: 50px;
   padding: 5px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 footer a {
@@ -167,10 +169,6 @@ footer a {
   .contact-us-link {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  footer {
-    font-size: 10px;
   }
 }
 
@@ -355,4 +353,65 @@ h5 {
   .tips-and-tricks-containers {
     width: 90%;
   }
+}
+
+/* Contact Page */
+
+.contact-page-header {
+  text-align: center;
+}
+
+.contact-us {
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-family: var(--main-font);
+  font-weight: 600;
+  margin-left: 220px;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  margin: 0;
+  background-color: #d9d9d9;
+  border: none;
+  font-size: 14px;
+  padding: 0 5px 5px;
+  font-family: var(--main-font);
+}
+
+.name-email-form {
+  margin-bottom: 7px;
+}
+
+.message-form-input {
+  width: 100%;
+  background-color: #d9d9d9;
+  border: none;
+  font-size: 14px;
+  padding: 0 5px;
+  font-family: var(--main-font);
+}
+
+.send-button {
+  background-color: var(--branding-color);
+  border-radius: 50px;
+  color: white;
+}
+
+.contacts {
+  background-color: var(--secondary-color);
+  color: white;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.contacts h4 {
+  font-family: var(--main-font);
+  font-size: 18px;
+}
+
+.contacts p {
+  font-family: var(--secondary-font);
+  font-size: 14px;
 }
