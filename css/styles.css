@@ -6,6 +6,18 @@
   --secondary-font: "Poppins", sans-serif;
 }
 
+.nav-link {
+  color: var(--text-color);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--branding-color);
+  font-weight: 500;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0 20px;
+}
 .main-page-header {
   text-align: center;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/890/original/Design_sem_nome-4.png?1710346558");
@@ -115,8 +127,9 @@ footer {
   text-align: center;
   padding: 5px;
   width: 100%;
-  position: fixed;
+  position: relative;
   bottom: 0;
+  margin-top: 30px;
 }
 
 footer a {
