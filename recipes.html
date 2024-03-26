@@ -13,10 +13,11 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -25,13 +26,15 @@
     <title>Recipes - The Baking Nook</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ps-5 pe-5">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary ps-5 pe-5 navbar-background"
+    >
       <div class="container-fluid navbar-container">
         <a class="navbar-brand" href="/"
           ><img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/119/816/original/Captura_de_ecrã_2024-03-19__às_15.47.47-removebg-preview.png?1710865069"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/150/original/Captura_de_ecrã_2024-03-21__às_18.09.00-removebg-preview.png?1711044713"
             alt=""
-            width="230"
+            width="250"
             class="img-fluid"
         /></a>
         <button
@@ -65,46 +68,42 @@
         </div>
       </div>
     </nav>
-    <header class="recipes-page-header">
+
+    <header class="secondary-pages-header">
       <h1>Recipes</h1>
-      <p>
-        Lorem ipsum dolor sit amet, et alii possim conceptam mea, te habeo
-        fuisset luptatum has, ne lorem vidisse quo. Saepe everti eripuit pri ut.
-        Sit quando fabellas voluptatum ut, ex pro aeterno aperiam temporibus.
-      </p>
     </header>
 
     <div class="container mt-4">
       <div class="row justify-content-center text-center">
         <div class="col-md-2">
-          <button class="recipes-buttons">Cakes</button>
+          <a href="#cakes" class="recipes-buttons">Cakes</a>
         </div>
         <div class="col-md-2">
-          <button class="recipes-buttons">Cupcakes</button>
+          <a href="#cupcakes" class="recipes-buttons">Cupcakes</a>
         </div>
         <div class="col-md-2">
-          <button class="recipes-buttons">Pies</button>
+          <a href="#cookies" class="recipes-buttons">Cookies</a>
         </div>
         <div class="col-md-2">
-          <button class="recipes-buttons">Tiramissu</button>
+          <a href="#bars-brownies" class="recipes-buttons">Bars and Brownies</a>
         </div>
         <div class="col-md-2">
-          <button class="recipes-buttons">Ice Cream</button>
+          <a href="#pies" class="recipes-buttons">Pies</a>
         </div>
       </div>
     </div>
 
-    <div class="container mt-5">
-      <div class="row g-0 justify-content-center recipes-headers">
-        <div class="col-sm-3">
+    <div class="container mt-5" id="cakes">
+      <div class="row g-0 justify-content-center">
+        <div class="col-sm-3 recipes-images-container">
           <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/119/191/original/Straberry_Camomile_Cake.png?1710511871"
-            alt=""
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/777/original/Chocolate-Brioche-Babka.jpg?1711474451"
+            alt="Chocolate Brioche Babka"
             class="recipe-images"
           />
         </div>
         <div class="col-sm-7 recipe-title-container">
-          <h5>Strawberry Camomille Cake</h5>
+          <h5>Chocolate Brioche Babka</h5>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -113,40 +112,49 @@
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur.
           </p>
+
+          <div class="time-serves-container">
+            <span class="time-serves">Total Time | </span>
+            <span class="time-serves-details">3 hours 30 minutes</span>
+            <span class="time-serves">Serves |</span>
+            <span class="time-serves-details">20 slices</span>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container mt-3">
+    <div class="container mt-3 recipe-description-container">
       <div class="row justify-content-center">
         <div class="col-sm-3">
-          <p class="recipe-content-title">Ingredients</p>
+          <p class="recipe-description-title">Ingredients</p>
         </div>
-        <div class="col-sm-7"><p class="recipe-content-title">Method</p></div>
+        <div class="col-sm-7">
+          <p class="recipe-description-title">Method</p>
+        </div>
       </div>
-      <hr class="ingredients-method-line" />
+      <div class="ingredients-method-line"></div>
       <div class="row justify-content-center">
         <div class="col-sm-3 ingredients-list">
           <p>2 cups granulated sugar</p>
-          <hr class="ingredients-line-divider" />
+          <div class="ingredients-line-divider"></div>
           <p>2 cups water</p>
-          <hr class="ingredients-line-divider" />
+          <div class="ingredients-line-divider"></div>
           <p>1 tbsp cornstarch</p>
-          <hr class="ingredients-line-divider" />
+          <div class="ingredients-line-divider"></div>
           <p>1 tsp baking powder</p>
-          <hr class="ingredients-line-divider" />
+          <div class="ingredients-line-divider"></div>
           <p>½ tsp baking soda</p>
-          <hr class="ingredients-line-divider" />
+          <div class="ingredients-line-divider"></div>
           <p>½ tsp salt</p>
-          <hr class="ingredients-line-divider" />
+          <div class="ingredients-line-divider"></div>
           <p>½ cup plant-based milk</p>
-          <hr class="ingredients-line-divider" />
+          <div class="ingredients-line-divider"></div>
           <p>2 Cups Granulated Sugar</p>
-          <hr class="ingredients-line-divider" />
+          <div class="ingredients-line-divider"></div>
           <p>2 cups water</p>
-          <hr class="ingredients-line-divider" />
+          <div class="ingredients-line-divider"></div>
         </div>
-        <div class="col-sm-7 recipe-method">
+        <div class="col-sm-7 mt-1 recipe-method">
           <p>
             1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
@@ -175,6 +183,631 @@
         </div>
       </div>
     </div>
+
+    <div class="container mt-5" id="cakes">
+      <div class="row g-0 justify-content-center">
+        <div class="col-sm-3 recipes-images-container">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/791/original/Chocolate-Chip-Banana-Cake.jpg?1711476820"
+            alt="Chocolate Chip Banana Cake"
+            class="recipe-images"
+          />
+        </div>
+        <div class="col-sm-7 recipe-title-container">
+          <h5>Chocolate Chip Banana Cake</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+
+          <div class="time-serves-container">
+            <span class="time-serves">Total Time | </span>
+            <span class="time-serves-details">1 hours 30 minutes</span>
+            <span class="time-serves">Serves |</span>
+            <span class="time-serves-details">20 slices</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3 recipe-description-container">
+      <div class="row justify-content-center">
+        <div class="col-sm-3">
+          <p class="recipe-description-title">Ingredients</p>
+        </div>
+        <div class="col-sm-7">
+          <p class="recipe-description-title">Method</p>
+        </div>
+      </div>
+      <div class="ingredients-method-line"></div>
+      <div class="row justify-content-center">
+        <div class="col-sm-3 ingredients-list">
+          <p>2 cups granulated sugar</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 cups water</p>
+          <div class="ingredients-line-divider"></div>
+          <p>1 tbsp cornstarch</p>
+          <div class="ingredients-line-divider"></div>
+          <p>1 tsp baking powder</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ tsp baking soda</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ tsp salt</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ cup plant-based milk</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 Cups Granulated Sugar</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 cups water</p>
+          <div class="ingredients-line-divider"></div>
+        </div>
+        <div class="col-sm-7 mt-1 recipe-method">
+          <p>
+            1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
+            volutpat consequat mauris. Neque aliquam vestibulum morbi blandit
+            cursus risus at ultrices mi. A arcu cursus vitae congue mauris
+            rhoncus aenean vel.
+          </p>
+          <p>
+            2. Leo duis ut diam quam nulla porttitor massa id neque. Nibh ipsum
+            consequat nisl vel pretium. Eget nunc scelerisque viverra mauris in
+            aliquam sem fringilla ut. Ornare aenean euismod elementum nisi.
+            Pharetra diam sit amet nisl. Venenatis urna cursus eget nunc
+            scelerisque.
+          </p>
+          <p>
+            3. Arcu ac tortor dignissim convallis aenean et tortor at risus.
+            Donec enim diam vulputate ut pharetra. Libero enim sed faucibus
+            turpis in eu mi. Cras pulvinar mattis nunc sed blandit libero
+            volutpat. Sapien eget mi proin sed libero enim sed. Risus ultricies
+            tristique nulla aliquet enim tortor at auctor. Tempor orci eu
+            lobortis elementum nibh. Sed enim ut sem viverra. Ut placerat orci
+            nulla pellentesque dignissim enim sit. Aliquet sagittis id
+            consectetur purus ut faucibus pulvinar elementum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="bars-brownies">
+      <div class="row g-0 justify-content-center">
+        <div class="col-sm-3 recipes-images-container">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/796/original/smores-banana-blondie.jpg?1711476846"
+            alt="Smores Banana Blondies"
+            class="recipe-images"
+          />
+        </div>
+        <div class="col-sm-7 recipe-title-container">
+          <h5>Smores Banana Blondies</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+
+          <div class="time-serves-container">
+            <span class="time-serves">Total Time | </span>
+            <span class="time-serves-details">1 hours 30 minutes</span>
+            <span class="time-serves">Serves |</span>
+            <span class="time-serves-details">20 slices</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3 recipe-description-container">
+      <div class="row justify-content-center">
+        <div class="col-sm-3">
+          <p class="recipe-description-title">Ingredients</p>
+        </div>
+        <div class="col-sm-7">
+          <p class="recipe-description-title">Method</p>
+        </div>
+      </div>
+      <div class="ingredients-method-line"></div>
+      <div class="row justify-content-center">
+        <div class="col-sm-3 ingredients-list">
+          <p>2 cups granulated sugar</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 cups water</p>
+          <div class="ingredients-line-divider"></div>
+          <p>1 tbsp cornstarch</p>
+          <div class="ingredients-line-divider"></div>
+          <p>1 tsp baking powder</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ tsp baking soda</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ tsp salt</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ cup plant-based milk</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 Cups Granulated Sugar</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 cups water</p>
+          <div class="ingredients-line-divider"></div>
+        </div>
+        <div class="col-sm-7 mt-1 recipe-method">
+          <p>
+            1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
+            volutpat consequat mauris. Neque aliquam vestibulum morbi blandit
+            cursus risus at ultrices mi. A arcu cursus vitae congue mauris
+            rhoncus aenean vel.
+          </p>
+          <p>
+            2. Leo duis ut diam quam nulla porttitor massa id neque. Nibh ipsum
+            consequat nisl vel pretium. Eget nunc scelerisque viverra mauris in
+            aliquam sem fringilla ut. Ornare aenean euismod elementum nisi.
+            Pharetra diam sit amet nisl. Venenatis urna cursus eget nunc
+            scelerisque.
+          </p>
+          <p>
+            3. Arcu ac tortor dignissim convallis aenean et tortor at risus.
+            Donec enim diam vulputate ut pharetra. Libero enim sed faucibus
+            turpis in eu mi. Cras pulvinar mattis nunc sed blandit libero
+            volutpat. Sapien eget mi proin sed libero enim sed. Risus ultricies
+            tristique nulla aliquet enim tortor at auctor. Tempor orci eu
+            lobortis elementum nibh. Sed enim ut sem viverra. Ut placerat orci
+            nulla pellentesque dignissim enim sit. Aliquet sagittis id
+            consectetur purus ut faucibus pulvinar elementum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="bars-brownies">
+      <div class="row g-0 justify-content-center">
+        <div class="col-sm-3 recipes-images-container">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/790/original/Yogurt-Lemon-Pie-Bars.jpg?1711476814"
+            alt="Yogurt Lemon Pie Bars"
+            class="recipe-images"
+          />
+        </div>
+        <div class="col-sm-7 recipe-title-container">
+          <h5>Yogurt Lemon Pie Bars</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+
+          <div class="time-serves-container">
+            <span class="time-serves">Total Time | </span>
+            <span class="time-serves-details">1 hours 30 minutes</span>
+            <span class="time-serves">Serves |</span>
+            <span class="time-serves-details">20 slices</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3 recipe-description-container">
+      <div class="row justify-content-center">
+        <div class="col-sm-3">
+          <p class="recipe-description-title">Ingredients</p>
+        </div>
+        <div class="col-sm-7">
+          <p class="recipe-description-title">Method</p>
+        </div>
+      </div>
+      <div class="ingredients-method-line"></div>
+      <div class="row justify-content-center">
+        <div class="col-sm-3 ingredients-list">
+          <p>2 cups granulated sugar</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 cups water</p>
+          <div class="ingredients-line-divider"></div>
+          <p>1 tbsp cornstarch</p>
+          <div class="ingredients-line-divider"></div>
+          <p>1 tsp baking powder</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ tsp baking soda</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ tsp salt</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ cup plant-based milk</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 Cups Granulated Sugar</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 cups water</p>
+          <div class="ingredients-line-divider"></div>
+        </div>
+        <div class="col-sm-7 mt-1 recipe-method">
+          <p>
+            1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
+            volutpat consequat mauris. Neque aliquam vestibulum morbi blandit
+            cursus risus at ultrices mi. A arcu cursus vitae congue mauris
+            rhoncus aenean vel.
+          </p>
+          <p>
+            2. Leo duis ut diam quam nulla porttitor massa id neque. Nibh ipsum
+            consequat nisl vel pretium. Eget nunc scelerisque viverra mauris in
+            aliquam sem fringilla ut. Ornare aenean euismod elementum nisi.
+            Pharetra diam sit amet nisl. Venenatis urna cursus eget nunc
+            scelerisque.
+          </p>
+
+          <p>
+            3. Arcu ac tortor dignissim convallis aenean et tortor at risus.
+            Donec enim diam vulputate ut pharetra. Libero enim sed faucibus
+            turpis in eu mi. Cras pulvinar mattis nunc sed blandit libero
+            volutpat. Sapien eget mi proin sed libero enim sed. Risus ultricies
+            tristique nulla aliquet enim tortor at auctor. Tempor orci eu
+            lobortis elementum nibh. Sed enim ut sem viverra. Ut placerat orci
+            nulla pellentesque dignissim enim sit. Aliquet sagittis id
+            consectetur purus ut faucibus pulvinar elementum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="pies">
+      <div class="row g-0 justify-content-center">
+        <div class="col-sm-3 recipes-images-container">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/793/original/Homemade-Cherry-Pie.jpg?1711476830"
+            alt="Cherry Pie"
+            class="recipe-images"
+          />
+        </div>
+        <div class="col-sm-7 recipe-title-container">
+          <h5>Cherry Pie</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+
+          <div class="time-serves-container">
+            <span class="time-serves">Total Time | </span>
+            <span class="time-serves-details">1 hours 30 minutes</span>
+            <span class="time-serves">Serves |</span>
+            <span class="time-serves-details">20 slices</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3 recipe-description-container">
+      <div class="row justify-content-center">
+        <div class="col-sm-3">
+          <p class="recipe-description-title">Ingredients</p>
+        </div>
+        <div class="col-sm-7">
+          <p class="recipe-description-title">Method</p>
+        </div>
+      </div>
+      <div class="ingredients-method-line"></div>
+      <div class="row justify-content-center">
+        <div class="col-sm-3 ingredients-list">
+          <p>2 cups granulated sugar</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 cups water</p>
+          <div class="ingredients-line-divider"></div>
+          <p>1 tbsp cornstarch</p>
+          <div class="ingredients-line-divider"></div>
+          <p>1 tsp baking powder</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ tsp baking soda</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ tsp salt</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ cup plant-based milk</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 Cups Granulated Sugar</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 cups water</p>
+          <div class="ingredients-line-divider"></div>
+        </div>
+        <div class="col-sm-7 mt-1 recipe-method">
+          <p>
+            1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
+            volutpat consequat mauris. Neque aliquam vestibulum morbi blandit
+            cursus risus at ultrices mi. A arcu cursus vitae congue mauris
+            rhoncus aenean vel.
+          </p>
+          <p>
+            2. Leo duis ut diam quam nulla porttitor massa id neque. Nibh ipsum
+            consequat nisl vel pretium. Eget nunc scelerisque viverra mauris in
+            aliquam sem fringilla ut. Ornare aenean euismod elementum nisi.
+            Pharetra diam sit amet nisl. Venenatis urna cursus eget nunc
+            scelerisque.
+          </p>
+          <p>
+            3. Arcu ac tortor dignissim convallis aenean et tortor at risus.
+            Donec enim diam vulputate ut pharetra. Libero enim sed faucibus
+            turpis in eu mi. Cras pulvinar mattis nunc sed blandit libero
+            volutpat. Sapien eget mi proin sed libero enim sed. Risus ultricies
+            tristique nulla aliquet enim tortor at auctor. Tempor orci eu
+            lobortis elementum nibh. Sed enim ut sem viverra. Ut placerat orci
+            nulla pellentesque dignissim enim sit. Aliquet sagittis id
+            consectetur purus ut faucibus pulvinar elementum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="cookies">
+      <div class="row g-0 justify-content-center">
+        <div class="col-sm-3 recipes-images-container">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/792/original/strawberry-lemonade-macarons.jpg?1711476825"
+            alt="Strawberry Lemonade Macarons"
+            class="recipe-images"
+          />
+        </div>
+        <div class="col-sm-7 recipe-title-container">
+          <h5>Strawberry Lemonade Macarons</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+
+          <div class="time-serves-container">
+            <span class="time-serves">Total Time | </span>
+            <span class="time-serves-details">1 hours 30 minutes</span>
+            <span class="time-serves">Serves |</span>
+            <span class="time-serves-details">20 slices</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3 recipe-description-container">
+      <div class="row justify-content-center">
+        <div class="col-sm-3">
+          <p class="recipe-description-title">Ingredients</p>
+        </div>
+        <div class="col-sm-7">
+          <p class="recipe-description-title">Method</p>
+        </div>
+      </div>
+      <div class="ingredients-method-line"></div>
+      <div class="row justify-content-center">
+        <div class="col-sm-3 ingredients-list">
+          <p>2 cups granulated sugar</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 cups water</p>
+          <div class="ingredients-line-divider"></div>
+          <p>1 tbsp cornstarch</p>
+          <div class="ingredients-line-divider"></div>
+          <p>1 tsp baking powder</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ tsp baking soda</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ tsp salt</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ cup plant-based milk</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 Cups Granulated Sugar</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 cups water</p>
+          <div class="ingredients-line-divider"></div>
+        </div>
+        <div class="col-sm-7 mt-1 recipe-method">
+          <p>
+            1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
+            volutpat consequat mauris. Neque aliquam vestibulum morbi blandit
+            cursus risus at ultrices mi. A arcu cursus vitae congue mauris
+            rhoncus aenean vel.
+          </p>
+          <p>
+            2. Leo duis ut diam quam nulla porttitor massa id neque. Nibh ipsum
+            consequat nisl vel pretium. Eget nunc scelerisque viverra mauris in
+            aliquam sem fringilla ut. Ornare aenean euismod elementum nisi.
+            Pharetra diam sit amet nisl. Venenatis urna cursus eget nunc
+            scelerisque.
+          </p>
+          <p>
+            3. Arcu ac tortor dignissim convallis aenean et tortor at risus.
+            Donec enim diam vulputate ut pharetra. Libero enim sed faucibus
+            turpis in eu mi. Cras pulvinar mattis nunc sed blandit libero
+            volutpat. Sapien eget mi proin sed libero enim sed. Risus ultricies
+            tristique nulla aliquet enim tortor at auctor. Tempor orci eu
+            lobortis elementum nibh. Sed enim ut sem viverra. Ut placerat orci
+            nulla pellentesque dignissim enim sit. Aliquet sagittis id
+            consectetur purus ut faucibus pulvinar elementum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="cookies">
+      <div class="row g-0 justify-content-center">
+        <div class="col-sm-3 recipes-images-container">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/794/original/White-Chocolate-Chip-Cookies.jpg?1711476835"
+            alt="Chocolate Chip Cookies"
+            class="recipe-images"
+          />
+        </div>
+        <div class="col-sm-7 recipe-title-container">
+          <h5>Chocolate Chip Cookies</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+
+          <div class="time-serves-container">
+            <span class="time-serves">Total Time | </span>
+            <span class="time-serves-details">1 hours 30 minutes</span>
+            <span class="time-serves">Serves |</span>
+            <span class="time-serves-details">20 slices</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3 recipe-description-container">
+      <div class="row justify-content-center">
+        <div class="col-sm-3">
+          <p class="recipe-description-title">Ingredients</p>
+        </div>
+        <div class="col-sm-7">
+          <p class="recipe-description-title">Method</p>
+        </div>
+      </div>
+      <div class="ingredients-method-line"></div>
+      <div class="row justify-content-center">
+        <div class="col-sm-3 ingredients-list">
+          <p>2 cups granulated sugar</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 cups water</p>
+          <div class="ingredients-line-divider"></div>
+          <p>1 tbsp cornstarch</p>
+          <div class="ingredients-line-divider"></div>
+          <p>1 tsp baking powder</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ tsp baking soda</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ tsp salt</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ cup plant-based milk</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 Cups Granulated Sugar</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 cups water</p>
+          <div class="ingredients-line-divider"></div>
+        </div>
+        <div class="col-sm-7 mt-1 recipe-method">
+          <p>
+            1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
+            volutpat consequat mauris. Neque aliquam vestibulum morbi blandit
+            cursus risus at ultrices mi. A arcu cursus vitae congue mauris
+            rhoncus aenean vel.
+          </p>
+          <p>
+            2. Leo duis ut diam quam nulla porttitor massa id neque. Nibh ipsum
+            consequat nisl vel pretium. Eget nunc scelerisque viverra mauris in
+            aliquam sem fringilla ut. Ornare aenean euismod elementum nisi.
+            Pharetra diam sit amet nisl. Venenatis urna cursus eget nunc
+            scelerisque.
+          </p>
+          <p>
+            3. Arcu ac tortor dignissim convallis aenean et tortor at risus.
+            Donec enim diam vulputate ut pharetra. Libero enim sed faucibus
+            turpis in eu mi. Cras pulvinar mattis nunc sed blandit libero
+            volutpat. Sapien eget mi proin sed libero enim sed. Risus ultricies
+            tristique nulla aliquet enim tortor at auctor. Tempor orci eu
+            lobortis elementum nibh. Sed enim ut sem viverra. Ut placerat orci
+            nulla pellentesque dignissim enim sit. Aliquet sagittis id
+            consectetur purus ut faucibus pulvinar elementum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="cupcakes">
+      <div class="row g-0 justify-content-center">
+        <div class="col-sm-3 recipes-images-container">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/795/original/vegan-red-velvetcupcakes.jpg?1711476840"
+            alt="Vegan Red Velvet Cupcakes"
+            class="recipe-images"
+          />
+        </div>
+        <div class="col-sm-7 recipe-title-container">
+          <h5>Vegan Red Velvet Cupcakes</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+
+          <div class="time-serves-container">
+            <span class="time-serves">Total Time | </span>
+            <span class="time-serves-details">1 hours 30 minutes</span>
+            <span class="time-serves">Serves |</span>
+            <span class="time-serves-details">20 slices</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3 recipe-description-container">
+      <div class="row justify-content-center">
+        <div class="col-sm-3">
+          <p class="recipe-description-title">Ingredients</p>
+        </div>
+        <div class="col-sm-7">
+          <p class="recipe-description-title">Method</p>
+        </div>
+      </div>
+      <div class="ingredients-method-line"></div>
+      <div class="row justify-content-center">
+        <div class="col-sm-3 ingredients-list">
+          <p>2 cups granulated sugar</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 cups water</p>
+          <div class="ingredients-line-divider"></div>
+          <p>1 tbsp cornstarch</p>
+          <div class="ingredients-line-divider"></div>
+          <p>1 tsp baking powder</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ tsp baking soda</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ tsp salt</p>
+          <div class="ingredients-line-divider"></div>
+          <p>½ cup plant-based milk</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 Cups Granulated Sugar</p>
+          <div class="ingredients-line-divider"></div>
+          <p>2 cups water</p>
+          <div class="ingredients-line-divider"></div>
+        </div>
+        <div class="col-sm-7 mt-1 recipe-method">
+          <p>
+            1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
+            volutpat consequat mauris. Neque aliquam vestibulum morbi blandit
+            cursus risus at ultrices mi. A arcu cursus vitae congue mauris
+            rhoncus aenean vel.
+          </p>
+          <p>
+            2. Leo duis ut diam quam nulla porttitor massa id neque. Nibh ipsum
+            consequat nisl vel pretium. Eget nunc scelerisque viverra mauris in
+            aliquam sem fringilla ut. Ornare aenean euismod elementum nisi.
+            Pharetra diam sit amet nisl. Venenatis urna cursus eget nunc
+            scelerisque.
+          </p>
+          <p>
+            3. Arcu ac tortor dignissim convallis aenean et tortor at risus.
+            Donec enim diam vulputate ut pharetra. Libero enim sed faucibus
+            turpis in eu mi. Cras pulvinar mattis nunc sed blandit libero
+            volutpat. Sapien eget mi proin sed libero enim sed. Risus ultricies
+            tristique nulla aliquet enim tortor at auctor. Tempor orci eu
+            lobortis elementum nibh. Sed enim ut sem viverra. Ut placerat orci
+            nulla pellentesque dignissim enim sit. Aliquet sagittis id
+            consectetur purus ut faucibus pulvinar elementum.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <footer>
       This project was coded by <a href="">Mariana Reis</a> and is open sourced
       on <a href="">GitHub</a>

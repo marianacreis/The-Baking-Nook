@@ -1,13 +1,20 @@
 :root {
-  --branding-color: #d94b5a;
-  --secondary-color: #eccdce;
-  --text-color: #5b383b;
-  --main-font: "Playfair Display", serif;
-  --secondary-font: "Poppins", sans-serif;
+  --branding-color: #c9a64c;
+  --secondary-color: rgb(3, 3, 3);
+  --text-color: rgb(124, 124, 124);
+  --main-font: "Quicksand", sans-serif;
+  --secondary-font: "Noto Serif Georgian", serif;
 }
 
 .nav-link {
-  color: var(--text-color);
+  color: var(--secondary-color);
+  font-family: var(--main-font);
+  font-weight: 100px;
+}
+
+.nav-link:hover {
+  color: var(--branding-color);
+  transition: 200ms all;
 }
 
 .navbar-nav .nav-link.active {
@@ -18,47 +25,79 @@
 .navbar-expand-lg .navbar-nav .nav-link {
   padding: 0 20px;
 }
+
+.bg-body-tertiary {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
 .main-page-header {
-  text-align: center;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/118/890/original/Design_sem_nome-4.png?1710346558");
+  color: var(--text-color);
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/133/original/h4-background-2.jpg?1711042133");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%;
-  color: var(--text-color);
-  padding: 200px 0;
+  background-size: cover;
+  height: 780px;
+  max-width: 100%;
 }
 
-.main-page-header h1 {
-  font-family: var(--main-font);
+.header-content {
+  margin-top: 50px;
+  padding-top: 100px;
+  margin-left: 700px;
+}
+
+.header-content h1 {
+  text-align: center;
+  font-size: 70px;
+  color: black;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 60px;
-  letter-spacing: 8px;
-}
-
-.main-page-header h1 span {
-  color: var(--branding-color);
-}
-
-.main-page-header h3 {
   font-family: var(--main-font);
-  font-size: 28px;
-  font-weight: 200;
+  font-weight: lighter;
+}
+
+.header-content .line-break {
+  border-bottom: solid;
+  border-color: var(--branding-color);
+  border-width: 1px;
+  width: 200px;
+  margin: 10px auto 0;
+}
+
+.header-content p {
+  text-align: center;
+  margin-top: 25px;
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .explore-button {
-  background-color: var(--branding-color);
-  padding: 10px 40px;
+  background-color: var(--secondary-color);
+  padding: 13px 71px;
   border: none;
-  border-radius: 50px;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
-  color: white;
-  font-size: 14px;
-  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--main-font);
+  letter-spacing: 5px;
+  line-height: 21px;
+  display: block;
+  margin: 36px auto 0;
+}
+
+.explore-button:hover {
+  background-color: var(--branding-color);
+  transition: all 200ms;
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 h2 {
-  color: var(--text-color);
+  color: var(--branding-color);
   text-align: center;
   font-weight: 300;
   text-transform: uppercase;
@@ -70,58 +109,95 @@ h2 {
 
 .about-us-paragraph {
   font-family: var(--secondary-font);
-  font-weight: 200;
+  color: var(--text-color);
+  font-weight: 300;
   width: 810px;
   margin: 0 auto;
   text-align: center;
   font-size: 15px;
-  line-height: 25px;
+  line-height: 26px;
   max-width: 100%;
 }
 
-.about-us-line {
-  width: 60%;
-  margin: 20px auto 0;
-  border: 1px solid var(--branding-color);
+.about-us .line-break {
+  border-bottom: solid;
+  border-color: var(--branding-color);
+  border-width: 1px;
+  width: 600px;
+  margin: 30px auto 0;
+}
+
+.image-column {
+  position: relative;
+}
+
+.image-column .text {
+  font-family: var(--main-font);
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0;
+  font-weight: 100;
+}
+
+.image-column .text a {
+  text-decoration: none;
+  color: white;
+}
+
+.image-column .overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.image-column:hover .overlay {
+  opacity: 1;
+  transition: 150ms all;
+  cursor: pointer;
 }
 
 .contact-container {
-  background-color: var(--secondary-color);
+  display: flex;
+  background-color: var(--branding-color);
+  color: white;
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px 50px;
+}
+
+.contact-container .text {
   width: 70%;
-  margin: 50px auto 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-right: 100px;
 }
 
 .contact-container h4 {
   font-family: var(--main-font);
-  font-weight: 200;
-  color: var(--text-color);
-  margin-left: 120px;
-  margin-bottom: 15px;
+  font-weight: 400;
 }
 
 .contact-container p {
-  font-family: var(--secondary-font);
-  font-weight: 300;
-  font-size: 14px;
-  color: var(--text-color);
-  margin-left: 120px;
+  font-family: var(--main-font);
+  font-weight: 200;
+  line-height: 26px;
 }
 
-.contact-us-link {
+.contact-container .contact-us-link {
   text-decoration: none;
   color: white;
-  font-family: var(--secondary-font);
-  font-size: 12px;
-  background-color: var(--branding-color);
-  padding: 10px 30px;
-  border-radius: 50px;
+  font-family: var(--main-font);
   text-transform: uppercase;
+  background-color: black;
 }
 
 footer {
-  background-color: var(--branding-color);
+  background-color: black;
+  font-family: var(--secondary-font);
   color: white;
   font-size: 10px;
   text-align: center;
@@ -129,105 +205,78 @@ footer {
   width: 100%;
   position: relative;
   bottom: 0;
-  margin-top: 30px;
+  margin-top: 50px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.769);
 }
 
 footer a {
   text-decoration: none;
   color: white;
   font-family: var(--secondary-font);
+  opacity: 0.9;
 }
 
-@media (max-width: 1024px) {
-  .main-page-header {
-    background: none;
-    background-color: var(--secondary-color);
-    padding: 100px 0;
-  }
-
-  .main-page-header h1 {
-    font-size: 40px;
-  }
-
-  .main-page-header h3 {
-    font-size: 20px;
-  }
-
-  .about-us-paragraph {
-    font-size: 13px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  .about-us-line {
-    width: 90%;
-  }
-
-  .images-grid {
-    width: 300px;
-    margin-bottom: 15px;
-  }
-
-  .contact-container {
-    width: 100%;
-    padding-left: 0;
-  }
-
-  .contact-container p {
-    display: none;
-  }
-
-  .contact-us-link {
-    margin-left: auto;
-    margin-right: auto;
-  }
+footer a:hover {
+  color: #c9a64c;
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 /* Recipes Page */
-.recipes-page-header h1 {
+.secondary-pages-header h1 {
+  background-color: #fafafa;
   font-family: var(--main-font);
-  color: var(--text-color);
-  text-align: center;
+  color: var(--secondary-color);
+  font-weight: 300;
+  font-size: 60px;
+  letter-spacing: 8px;
   text-transform: uppercase;
-}
-
-.recipes-page-header p {
-  font-family: var(--secondary-font);
-  color: var(--text-color);
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 14px;
+  padding: 50px 70px;
 }
 
 .recipes-buttons {
-  border: none;
-  width: 120px;
+  display: inline-block;
+  text-decoration: none;
   padding: 6px 0;
-  border-radius: 50px;
-  color: white;
+  color: rgba(255, 255, 255, 0.893);
   background-color: var(--branding-color);
-  font-size: 12px;
-  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: var(--main-font);
   font-weight: 300;
+  letter-spacing: 2px;
+  width: 200px;
+  cursor: pointer;
+  padding: 10px 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.recipes-buttons:hover {
+  background-color: var(--secondary-color);
+  transition: all 150ms ease;
+}
+
+.recipes-images-container {
+  background-color: #fafafa;
 }
 
 .recipe-images {
   background-color: #eccdce;
   max-width: 100%;
+  width: 280px;
 }
 
 .recipe-title-container {
-  background-color: var(--secondary-color);
   color: var(--text-color);
-  padding: 30px 60px 0;
+  padding: 30px 0;
+  background-color: #fafafa;
 }
 
-h5 {
+.recipe-title-container h5 {
   font-family: var(--main-font);
-  font-weight: 200;
+  color: var(--branding-color);
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 15px;
@@ -235,11 +284,34 @@ h5 {
 
 .recipe-title-container p {
   font-family: var(--secondary-font);
+  color: var(--text-color);
   font-weight: 300;
-  font-size: 13px;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.7px;
+  margin-right: 30px;
 }
-.recipe-content-title {
+
+.time-serves-container {
+  font-weight: 300;
+  margin-top: 60px;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+}
+
+.time-serves {
+  color: var(--branding-color);
+}
+
+.time-serves-details {
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+  margin-right: 10px;
+}
+
+.recipe-description-title {
+  font-weight: 300;
+  letter-spacing: 2px;
   color: var(--branding-color);
   font-family: var(--main-font);
   text-transform: uppercase;
@@ -248,16 +320,20 @@ h5 {
 }
 
 .ingredients-method-line {
+  border-bottom: solid;
+  border-color: var(--branding-color);
+  border-width: 1px;
   width: 83%;
   margin: 0 auto;
-  border: 1px solid var(--branding-color);
   margin-bottom: 6px;
 }
 
-.ingredients-list {
+.recipe-description-container {
   color: var(--text-color);
   font-family: var(--secondary-font);
   font-size: 15px;
+  line-height: 1.7;
+  font-weight: 300;
 }
 
 .ingredients-list p {
@@ -265,107 +341,49 @@ h5 {
 }
 
 .ingredients-line-divider {
+  border-bottom: solid;
+  border-color: var(--branding-color);
+  border-width: 1px;
   width: 80%;
-  border: 1px solid var(--branding-color);
   margin: 0;
-}
-
-.recipe-method {
-  font-family: var(--secondary-font);
-  font-size: 15px;
-  color: var(--text-color);
-  line-height: 1.7;
-}
-
-@media (max-width: 819px) {
-  .recipes-page-header p {
-    width: 95%;
-  }
-
-  .recipes-buttons {
-    display: none;
-  }
-
-  .recipe-title-container {
-    padding: 0;
-    background-color: white;
-    margin-top: 30px;
-  }
-
-  .recipe-title-container p {
-    display: none;
-  }
-
-  .recipe-title-container h5 {
-    font-weight: 500;
-  }
-
-  .recipe-content-title {
-    display: none;
-    font-size: 12px;
-  }
-
-  .ingredients-method-line {
-    display: none;
-  }
-
-  .ingredients-list p {
-    font-size: 15px;
-  }
-
-  .recipe-method {
-    margin-top: 20px;
-  }
 }
 
 /* Tips and Tricks Page */
 
-.tips-and-tricks-header h1 {
-  font-family: var(--main-font);
-  text-align: center;
-  margin: 0;
-}
-
 .tips-number-container {
-  background-color: var(--secondary-color);
+  background-color: #fafafa;
 }
 
 .tips-number {
   font-size: 120px;
   text-align: center;
   margin: 0;
-  color: white;
-  font-weight: 500;
+  color: var(--branding-color);
+  font-weight: lighter;
 }
 
-.tips-content-container {
-  background-color: #eccdceb0;
+.tips-content-container h5 {
+  font-family: var(--main-font);
+  color: var(--branding-color);
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.tip-line-divider {
+  border-bottom: solid;
+  border-color: var(--branding-color);
+  border-width: 1px;
+  width: 20%;
+  margin-bottom: 10px;
 }
 
 .tips-text {
   font-family: var(--secondary-font);
   font-weight: 300;
-  font-size: 13px;
-  line-height: 1.5;
-}
-
-@media (max-width: 819px) {
-  .tips-number {
-    font-size: 25px;
-  }
-
-  .tips-content-container h5 {
-    text-align: center;
-    font-size: 18px;
-  }
-
-  .tips-text {
-    text-align: center;
-  }
-
-  .tips-and-tricks-containers {
-    width: 90%;
-  }
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.7px;
 }
 
 /* Contact Page */
