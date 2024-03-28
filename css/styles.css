@@ -72,6 +72,7 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
+  margin-bottom: 30px;
 }
 
 .explore-button {
@@ -85,8 +86,8 @@
   font-family: var(--main-font);
   letter-spacing: 5px;
   line-height: 21px;
-  display: block;
-  margin: 36px auto 0;
+  text-decoration: none;
+  margin-left: 265px;
 }
 
 .explore-button:hover {

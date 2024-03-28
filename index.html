@@ -23,8 +23,11 @@
     />
 
     <link rel="stylesheet" href="css/styles.css" />
-
-    <title>The Baking Nook</title>
+    <meta
+      name="description"
+      content="This is a website dedicated to baking recipes. In here you can find a diverse type of sweet recipes, like cakes, cookies, cupcakes and much more. We also have a page with some tips and tricks related to baking."
+    />
+    <title>Homepage - The Baking Nook</title>
   </head>
   <body>
     <header class="main-page-header">
@@ -32,7 +35,7 @@
         class="navbar navbar-expand-lg bg-body-tertiary ps-5 pe-5 navbar-background"
       >
         <div class="container-fluid navbar-container">
-          <a class="navbar-brand" href="/"
+          <a class="navbar-brand" href="/" title="homepage"
             ><img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/150/original/Captura_de_ecrã_2024-03-21__às_18.09.00-removebg-preview.png?1711044713"
               alt="The Baking Nook logo"
@@ -53,18 +56,32 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/recipes.html">Recipes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/tips-and-tricks.html"
-                  >Tips and Tricks</a
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/"
+                  title="homepage"
+                  >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/contact.html">Contacts</a>
+                <a class="nav-link" href="/recipes.html" title="recipes page">
+                  Recipes
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/tips-and-tricks.html"
+                  title="tips and tricks page"
+                >
+                  Tips and Tricks
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html" title="contact page">
+                  Contacts
+                </a>
               </li>
             </ul>
           </div>
@@ -78,11 +95,11 @@
           Lorem Ipsum proin gravida nibh vel velit auctor aliquetenean <br />
           sollicitudin, lorem qui bibendum auctor, nisi elit consequat gravida.
         </p>
-        <button class="explore-button">Explore</button>
+        <a href="/index.html#about-us" class="explore-button">Explore</a>
       </div>
     </header>
 
-    <div class="about-us">
+    <div class="about-us" id="about-us">
       <h2>About Us</h2>
       <p class="about-us-paragraph">
         Lorem ipsum dolor sit amet, et alii possim conceptam mea, te habeo
@@ -106,7 +123,14 @@
             class="img-fluid"
           />
           <div class="overlay">
-            <p class="text"><a href="">Chocolate Brioche Babka</a></p>
+            <p class="text">
+              <a
+                href="/recipes.html#chocolate-brioche-recipe"
+                title="Chocolate Brioche Babka Recipe Page"
+              >
+                Chocolate Brioche Babka
+              </a>
+            </p>
           </div>
         </div>
         <div class="col-md px-0 me-2 image-column">
@@ -116,7 +140,14 @@
             class="img-fluid"
           />
           <div class="overlay">
-            <p class="text"><a href="">Yogurt Lemon Pie Bars</a></p>
+            <p class="text">
+              <a
+                href="/recipes.html#yogurt-lemon-pie-bars-recipe"
+                title="yogurt lemon pie bars recipe page"
+              >
+                Yogurt Lemon Pie Bars
+              </a>
+            </p>
           </div>
         </div>
         <div class="col-md px-0 ms-2 image-column">
@@ -126,7 +157,13 @@
             class="img-fluid"
           />
           <div class="overlay">
-            <p class="text"><a href="">Chocolate Chip Banana Cake</a></p>
+            <p class="text">
+              <a
+                href="/recipes.html#chocolate-chip-banana-cake-recipe"
+                title="chocolate chip banana cake recipe"
+                >Chocolate Chip Banana Cake
+              </a>
+            </p>
           </div>
         </div>
         <div class="col-md px-0 ms-3 image-column">
@@ -136,7 +173,14 @@
             class="img-fluid"
           />
           <div class="overlay">
-            <p class="text"><a href="">Straberry Lemonade Macarons</a></p>
+            <p class="text">
+              <a
+                href="/recipes.html#strawberry-lemonade-macarons-recipe"
+                title="strawberry lemonade macarons recipe page"
+              >
+                Straberry Lemonade Macarons
+              </a>
+            </p>
           </div>
         </div>
       </div>
@@ -148,7 +192,14 @@
             class="img-fluid"
           />
           <div class="overlay">
-            <p class="text"><a href="">Cherry Pie</a></p>
+            <p class="text">
+              <a
+                href="/recipes.html#cherry-pie-recipe"
+                title="cherry pie recipe page"
+              >
+                Cherry Pie
+              </a>
+            </p>
           </div>
         </div>
         <div class="col-md px-0 me-2 image-column">
@@ -158,7 +209,14 @@
             class="img-fluid"
           />
           <div class="overlay">
-            <p class="text"><a href="">White Chocolate Chip Cookies</a></p>
+            <p class="text">
+              <a
+                href="/recipes.html#white-chocolate-chip-cookies-recipe"
+                title="white chocolate chip cookies recipe"
+              >
+                White Chocolate Chip Cookies
+              </a>
+            </p>
           </div>
         </div>
         <div class="col-md px-0 ms-2 image-column">
@@ -168,7 +226,14 @@
             class="img-fluid"
           />
           <div class="overlay">
-            <p class="text"><a href="">Vegan Red Velvet Cupcakes</a></p>
+            <p class="text">
+              <a
+                href="/recipes.html#red-velvet-cupcakes-recipe"
+                title="vegan red velver cupcakes recipe page"
+              >
+                Vegan Red Velvet Cupcakes
+              </a>
+            </p>
           </div>
         </div>
         <div class="col-md px-0 ms-3 image-column">
@@ -178,7 +243,14 @@
             class="img-fluid"
           />
           <div class="overlay">
-            <p class="text"><a href="">Smores Banana Blondies</a></p>
+            <p class="text">
+              <a
+                href="/recipes.html#smores-banana-blondies-recipe"
+                title="smores banana blondies recipe page"
+              >
+                Smores Banana Blondies
+              </a>
+            </p>
           </div>
         </div>
       </div>
@@ -194,12 +266,16 @@
           vitae eros est. Nam sodales augue ut massa tempor malesuada.
         </p>
       </div>
-      <a href="#" class="contact-us-link">Contact Us</a>
+      <a href="/contact.html" class="contact-us-link" title="contact us page"
+        >Contact Us</a
+      >
     </div>
 
     <footer>
-      This project was coded by <a href="">Mariana Reis</a> and is open sourced
-      on <a href="">GitHub</a>
+      This project was coded by
+      <a href="https://github.com/marianacreis">Mariana Reis</a> and is open
+      sourced on
+      <a href="https://github.com/marianacreis/The-Baking-Nook">GitHub</a>
     </footer>
   </body>
 </html>
