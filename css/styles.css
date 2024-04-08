@@ -14,7 +14,7 @@
 
 .nav-link:hover {
   color: var(--branding-color);
-  transition: 200ms all;
+  transition: 200ms all ease;
 }
 
 .navbar-nav .nav-link.active {
@@ -32,28 +32,29 @@
 
 .main-page-header {
   color: var(--text-color);
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/133/original/h4-background-2.jpg?1711042133");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/422/original/Banner-Image.jpg?1712589630");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 780px;
+  height: 750px;
   max-width: 100%;
+  margin-top: 0;
 }
 
 .header-content {
-  margin-top: 50px;
+  margin: 0 0 0 700px;
   padding-top: 100px;
-  margin-left: 700px;
+  width: 600px;
+  text-align: center;
 }
 
 .header-content h1 {
-  text-align: center;
-  font-size: 70px;
   color: black;
-  font-weight: 300;
-  text-transform: uppercase;
   font-family: var(--main-font);
-  font-weight: lighter;
+  font-size: 70px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .header-content .line-break {
@@ -61,51 +62,46 @@
   border-color: var(--branding-color);
   border-width: 1px;
   width: 200px;
-  margin: 10px auto 0;
+  margin: 10px auto;
 }
 
 .header-content p {
-  text-align: center;
-  margin-top: 25px;
-  font-family: var(--secondary-font);
   color: var(--text-color);
-  font-weight: 300;
+  font-family: var(--secondary-font);
   font-size: 20px;
+  font-weight: 300;
   line-height: 28px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .explore-button {
-  background-color: var(--secondary-color);
-  padding: 13px 71px;
-  border: none;
   color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 400;
+  background-color: var(--secondary-color);
   font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 300;
   letter-spacing: 5px;
   line-height: 21px;
+  text-transform: uppercase;
   text-decoration: none;
-  margin-left: 265px;
+  border: none;
+  padding: 13px 71px;
 }
 
 .explore-button:hover {
   background-color: var(--branding-color);
-  transition: all 200ms;
+  transition: all 200ms ease;
   cursor: pointer;
-  opacity: 0.8;
 }
 
 h2 {
   color: var(--branding-color);
-  text-align: center;
-  font-weight: 300;
-  text-transform: uppercase;
   font-family: var(--main-font);
-  margin-top: 50px;
-  margin-bottom: 15px;
   font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 50px 0 15px;
 }
 
 .about-us-paragraph {
@@ -124,7 +120,7 @@ h2 {
   border-bottom: solid;
   border-color: var(--branding-color);
   border-width: 1px;
-  width: 600px;
+  width: 60%;
   margin: 30px auto 0;
 }
 
@@ -135,11 +131,11 @@ h2 {
 .image-column .text {
   font-family: var(--main-font);
   font-size: 32px;
+  font-weight: 100;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin: 0;
-  font-weight: 100;
 }
 
 .image-column .text a {
@@ -159,14 +155,14 @@ h2 {
 
 .image-column:hover .overlay {
   opacity: 1;
-  transition: 150ms all;
+  transition: 150ms all ease;
   cursor: pointer;
 }
 
 .contact-section-container {
   display: flex;
-  background-color: #fafafa;
   color: white;
+  background-color: #fafafa;
   width: 80%;
   margin: 40px auto;
   padding: 20px 50px;
@@ -178,62 +174,62 @@ h2 {
   margin-right: 100px;
 }
 
-.contact-section-container h4 {
-  font-family: var(--main-font);
-  font-weight: 400;
+.contact-section-container .text h4 {
   color: var(--secondary-color);
+  font-family: var(--main-font);
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-.contact-section-line {
+.contact-section-container .break-line {
   border-bottom: solid;
   border-color: var(--branding-color);
   border-width: 1px;
   width: 25%;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
-.contact-section-container p {
+.contact-section-container .text p {
   font-family: var(--secondary-font);
+  font-size: 15px;
   font-weight: 200;
   line-height: 26px;
   color: var(--text-color);
 }
 
-.contact-section-container .contact-us-link {
+.contact-section-container .contact-us-button {
   text-decoration: none;
+  background-color: black;
   color: white;
   font-family: var(--main-font);
-  text-transform: uppercase;
-  background-color: black;
-  text-align: center;
-  height: 100%;
-  justify-content: center;
-  margin: auto;
   font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  height: 100%;
+  margin: auto;
   padding: 15px;
 }
 
-.contact-section-container .contact-us-link:hover {
+.contact-section-container .contact-us-button:hover {
   background-color: var(--branding-color);
-  transition: all 200ms;
+  transition: all 150ms ease;
   cursor: pointer;
-  opacity: 0.8;
 }
 
 footer {
+  position: relative;
+  bottom: 0;
   background-color: black;
+  color: rgba(255, 255, 255, 0.769);
   font-family: var(--main-font);
-  color: white;
   font-size: 10px;
+  letter-spacing: 1px;
   text-align: center;
   padding: 5px;
   width: 100%;
-  position: relative;
-  bottom: 0;
   margin-top: 50px;
-  letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.769);
 }
 
 footer a {
@@ -257,47 +253,40 @@ footer a:hover {
 }
 
 .secondary-pages-header h1 {
-  font-family: var(--main-font);
   color: var(--secondary-color);
-  font-weight: 300;
+  font-family: var(--main-font);
   font-size: 60px;
+  font-weight: 300;
   letter-spacing: 8px;
 }
 
-.secondary-pages-header div {
+.secondary-pages-header .line-break {
   border-bottom: solid;
   border-color: var(--branding-color);
   border-width: 1px;
-  width: 200px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.secondary-pages-header p {
-  font-family: var(--secondary-font);
-  color: var(--text-color);
+  width: 15%;
+  margin: 20px 0;
 }
 
 .recipes-buttons {
   display: inline-block;
-  text-decoration: none;
-  padding: 6px 0;
+  background-color: var(--secondary-color);
   color: rgba(255, 255, 255, 0.893);
-  background-color: var(--branding-color);
-  text-transform: uppercase;
-  font-size: 13px;
   font-family: var(--main-font);
+  font-size: 13px;
   font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
   letter-spacing: 2px;
   width: 200px;
-  cursor: pointer;
-  padding: 10px 0;
+  padding: 13px 0;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .recipes-buttons:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--branding-color);
   transition: all 150ms ease;
+  cursor: pointer;
 }
 
 .recipes-images-container {
@@ -305,20 +294,19 @@ footer a:hover {
 }
 
 .recipe-images {
-  background-color: #eccdce;
-  max-width: 100%;
   width: 280px;
 }
 
 .recipe-title-container {
+  background-color: #fafafa;
   color: var(--text-color);
   padding: 30px 0;
-  background-color: #fafafa;
 }
 
 .recipe-title-container h5 {
-  font-family: var(--main-font);
   color: var(--branding-color);
+  font-family: var(--main-font);
+  font-size: 20px;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -328,47 +316,29 @@ footer a:hover {
 .recipe-title-container p {
   font-family: var(--secondary-font);
   color: var(--text-color);
-  font-weight: 300;
   font-size: 14px;
+  font-weight: 300;
   line-height: 1.6;
   letter-spacing: 0.7px;
   margin-right: 30px;
 }
 
 .time-serves-container {
+  font-size: 14px;
   font-weight: 300;
   margin-top: 60px;
-  font-size: 14px;
   letter-spacing: 0.7px;
 }
 
 .time-serves {
   color: var(--branding-color);
+  font-family: var(--main-font);
 }
 
 .time-serves-details {
   color: var(--text-color);
   font-family: var(--secondary-font);
   margin-right: 10px;
-}
-
-.recipe-description-title {
-  font-weight: 300;
-  letter-spacing: 2px;
-  color: var(--branding-color);
-  font-family: var(--main-font);
-  text-transform: uppercase;
-  font-size: 15px;
-  margin-bottom: 6px;
-}
-
-.ingredients-method-line {
-  border-bottom: solid;
-  border-color: var(--branding-color);
-  border-width: 1px;
-  width: 83%;
-  margin: 0 auto;
-  margin-bottom: 6px;
 }
 
 .recipe-description-container {
@@ -379,16 +349,33 @@ footer a:hover {
   font-weight: 300;
 }
 
+.recipe-description-title {
+  color: var(--branding-color);
+  font-family: var(--main-font);
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.recipe-description-container .line-break {
+  border-bottom: solid;
+  border-color: var(--branding-color);
+  border-width: 1px;
+  width: 83%;
+  margin: 5px auto;
+}
+
 .ingredients-list p {
   margin: 5px 0;
 }
 
-.ingredients-line-divider {
+.ingredients-list .line-break {
   border-bottom: solid;
   border-color: var(--branding-color);
   border-width: 1px;
-  width: 80%;
-  margin: 0;
+  width: 70%;
+  margin-left: 0;
 }
 
 /* Tips and Tricks Page */
@@ -398,22 +385,23 @@ footer a:hover {
 }
 
 .tips-number {
+  color: var(--branding-color);
+  font-family: var(--main-font);
+  font-weight: 300;
   font-size: 120px;
   text-align: center;
   margin: 0;
-  color: var(--branding-color);
-  font-weight: lighter;
 }
 
 .tips-content-container h5 {
-  font-family: var(--main-font);
   color: var(--branding-color);
-  font-weight: lighter;
-  text-transform: uppercase;
+  font-family: var(--main-font);
   font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
-.tip-line-divider {
+.tips-content-container .line-break {
   border-bottom: solid;
   border-color: var(--branding-color);
   border-width: 1px;
@@ -421,27 +409,28 @@ footer a:hover {
   margin-bottom: 10px;
 }
 
-.tips-text {
+.tips-content-container p {
+  color: var(--text-color);
   font-family: var(--secondary-font);
-  font-weight: 300;
   font-size: 14px;
+  font-weight: 300;
   line-height: 1.6;
   letter-spacing: 0.7px;
 }
 
 /* Contact Page */
 
-.recipe-container-header {
-  font-family: var(--main-font);
+.contact-container-header {
   color: var(--secondary-color);
-  text-transform: uppercase;
-  letter-spacing: 0.7px;
+  font-family: var(--main-font);
   font-size: 22px;
   font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
   margin-bottom: 10px;
 }
 
-.recipe-container-line {
+.contact-container .line-break {
   border-bottom: solid;
   border-color: var(--branding-color);
   border-width: 1px;
@@ -449,29 +438,30 @@ footer a:hover {
   margin-bottom: 10px;
 }
 
-.recipe-container-text {
-  font-family: var(--secondary-font);
+.contact-container p {
   color: var(--text-color);
-  letter-spacing: 0.7px;
-  line-height: 1.6;
+  font-family: var(--secondary-font);
   font-size: 16px;
   font-weight: 300;
+  letter-spacing: 0.7px;
+  line-height: 1.6;
 }
 
-.recipe-container-text i {
+.contact-container p i {
   color: var(--branding-color);
   margin-right: 8px;
 }
 
 .contact-form input {
   width: 100%;
-  margin-bottom: 5px;
   font-family: var(--secondary-font);
-  border: solid 1px #ebe9e9;
   font-size: 15px;
+  margin-bottom: 5px;
+  border: solid 1px #ebe9e9;
   padding: 7px 10px;
 }
-.message-form-input {
+
+form .message-form-input {
   width: 100%;
   font-family: var(--secondary-font);
   border: solid 1px #ebe9e9;
@@ -480,26 +470,215 @@ footer a:hover {
 }
 
 form .send-button {
-  color: white;
+  width: 130px;
+  color: rgba(255, 255, 255, 0.89);
   background-color: var(--secondary-color);
   font-family: var(--main-font);
-  text-transform: uppercase;
-  width: 130px;
-  padding: 11px;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.89);
-  border: none;
   font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 11px;
+  border: none;
 }
 
 form .send-button:hover {
   background-color: var(--branding-color);
-  transition: all 200ms;
+  transition: all 150ms ease;
   cursor: pointer;
-  opacity: 0.8;
 }
 
 .contact-page-footer {
   position: fixed;
   bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 !important;
+    background-color: #fafafa !important;
+  }
+
+  .main-page-header {
+    background-image: none;
+    background-color: #fafafa;
+    height: 100%;
+  }
+
+  .header-content {
+    margin-left: 0;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    width: 100%;
+  }
+
+  .header-content h1 {
+    font-size: 35px;
+  }
+
+  .header-content .line-break {
+    width: 300px;
+    margin-top: 20px 0;
+  }
+
+  .header-content p {
+    font-size: 15px;
+    line-height: 23px;
+    padding: 0 28px;
+  }
+
+  .header-content p br {
+    display: none;
+  }
+
+  .explore-button {
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding: 8px 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 0;
+  }
+
+  .about-us-paragraph {
+    font-size: 15px;
+    line-height: 23px;
+    margin: 10px auto;
+    padding: 0 25px;
+  }
+
+  .about-us .line-break {
+    width: 200px;
+  }
+
+  .image-column {
+    padding: 0;
+    margin: 0 !important;
+  }
+
+  .recipes-images-homepage {
+    width: 80%;
+    display: block;
+    margin: 0 auto 5px;
+  }
+
+  .contact-section-container {
+    width: 100%;
+    display: block;
+  }
+
+  .contact-section-container .text {
+    margin: 0 auto;
+  }
+
+  .contact-section-container .text h4 {
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contact-section-container .break-line {
+    display: none;
+  }
+
+  .contact-section-container .text p {
+    display: none;
+  }
+
+  .contact-section-container .contact-us-button {
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding: 8px;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  footer {
+    font-size: 7px;
+    margin-top: 20px;
+  }
+
+  /* Recipes Page */
+
+  .secondary-pages-header {
+    padding: 20px 30px;
+  }
+
+  .secondary-pages-header h1 {
+    font-size: 35px;
+  }
+
+  .secondary-pages-header .line-break {
+    width: 150px;
+    margin: 20px 0;
+  }
+
+  .recipes-buttons {
+    margin: 10px auto;
+    align-items: center;
+    font-size: 11px;
+    width: 150px;
+    padding: 8px;
+    background-color: white;
+    color: black;
+    border: solid 1px var(--branding-color);
+    box-shadow: none;
+  }
+
+  .recipe-full-container {
+    padding: 0 !important ;
+  }
+
+  .recipe-images {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .recipe-title-container {
+    text-align: center;
+  }
+
+  .recipe-title-container p {
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .time-serves-container {
+    padding: 0 10px;
+    margin-top: 30px;
+  }
+
+  .recipe-description-title {
+    display: none;
+  }
+
+  .recipe-description-container .line-break {
+    display: none;
+  }
+
+  .recipe-method {
+    margin-top: 30px !important;
+  }
+
+  /* Tips and Tricks Page */
+
+  .tips-number-container {
+    display: none;
+  }
+
+  .tips-content-container .line-break {
+    margin: 20px 0;
+  }
+
+  /* Contact Page */
+  .contact-container .line-break {
+    display: none;
+  }
+
+  .contact-container p {
+    margin-bottom: 20px;
+  }
 }

@@ -14,7 +14,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,71 +22,78 @@
     />
 
     <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="This is a website dedicated to baking recipes. In here you can find a diverse type of sweet recipes, like cakes, cookies, cupcakes and much more. We also have a page with some tips and tricks related to baking."
     />
     <title>Homepage - The Baking Nook</title>
   </head>
-  <body>
-    <header class="main-page-header">
-      <nav
-        class="navbar navbar-expand-lg bg-body-tertiary ps-5 pe-5 navbar-background"
-      >
-        <div class="container-fluid navbar-container">
-          <a class="navbar-brand" href="/" title="homepage"
-            ><img
-              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/150/original/Captura_de_ecrã_2024-03-21__às_18.09.00-removebg-preview.png?1711044713"
-              alt="The Baking Nook logo"
-              width="250"
-              class="img-fluid"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/"
-                  title="homepage"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/recipes.html" title="recipes page">
-                  Recipes
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="/tips-and-tricks.html"
-                  title="tips and tricks page"
-                >
-                  Tips and Tricks
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contact.html" title="contact page">
-                  Contacts
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
 
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ps-5 pe-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/" title="homepage"
+          ><img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/150/original/Captura_de_ecrã_2024-03-21__às_18.09.00-removebg-preview.png?1711044713"
+            alt="The Baking Nook logo"
+            width="250"
+            class="img-fluid d-none d-md-block"
+          />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/413/original/logo-small.png?1712586570"
+            class="small-logo img-fluid d-block d-md-none"
+            width="50"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/"
+                title="homepage"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/recipes.html" title="recipes page">
+                Recipes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/tips-and-tricks.html"
+                title="tips and tricks page"
+              >
+                Tips and Tricks
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html" title="contact page">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="main-page-header">
       <div class="header-content">
         <h1>The Baking <br />Nook</h1>
         <div class="line-break"></div>
@@ -113,14 +119,13 @@
     </div>
 
     <h2>Our Recipes</h2>
-
-    <div class="container mt-4 grid-container">
+    <div class="container-fluid mt-4">
       <div class="row">
         <div class="col-md px-0 me-3 image-column">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/278/original/Chocolate-Brioche-Babka.jpeg?1711123826"
             alt="Chocolate Brioche Babka"
-            class="img-fluid"
+            class="img-fluid recipes-images-homepage"
           />
           <div class="overlay">
             <p class="text">
@@ -137,7 +142,7 @@
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/281/original/Yogurt-Lemon-Pie-Bars.jpeg?1711124183"
             alt="Yogurt Lemon Pie Bars"
-            class="img-fluid"
+            class="img-fluid recipes-images-homepage"
           />
           <div class="overlay">
             <p class="text">
@@ -154,14 +159,15 @@
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/282/original/Chocolate-Chip-Banana-Cake.jpeg?1711124194"
             alt="Chocolate Chip Banana Cake"
-            class="img-fluid"
+            class="img-fluid recipes-images-homepage"
           />
           <div class="overlay">
             <p class="text">
               <a
                 href="/recipes.html#chocolate-chip-banana-cake-recipe"
                 title="chocolate chip banana cake recipe"
-                >Chocolate Chip Banana Cake
+              >
+                Chocolate Chip Banana Cake
               </a>
             </p>
           </div>
@@ -170,7 +176,7 @@
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/283/original/strawberry-lemonade-macarons.jpeg?1711124200"
             alt="Straberry Lemonade Macarons"
-            class="img-fluid"
+            class="img-fluid recipes-images-homepage"
           />
           <div class="overlay">
             <p class="text">
@@ -189,7 +195,7 @@
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/284/original/Homemade-Cherry-Pie.jpeg?1711124207"
             alt="Cherry Pie"
-            class="img-fluid"
+            class="img-fluid recipes-images-homepage"
           />
           <div class="overlay">
             <p class="text">
@@ -206,7 +212,7 @@
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/285/original/White-Chocolate-Chip-Cookies.jpeg?1711124212"
             alt="White Chocolate Chip Cookies"
-            class="img-fluid"
+            class="img-fluid recipes-images-homepage"
           />
           <div class="overlay">
             <p class="text">
@@ -223,7 +229,7 @@
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/286/original/vegan-red-velvetcupcakes.jpeg?1711124219"
             alt="Vegan Red Velvet Cupcakes"
-            class="img-fluid"
+            class="img-fluid recipes-images-homepage"
           />
           <div class="overlay">
             <p class="text">
@@ -240,7 +246,7 @@
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/287/original/smores-banana-blondie.jpeg?1711124225"
             alt="Smores Banana Blondies"
-            class="img-fluid"
+            class="img-fluid recipes-images-homepage"
           />
           <div class="overlay">
             <p class="text">
@@ -259,23 +265,26 @@
     <div class="contact-section-container">
       <div class="text">
         <h4>Recipe Suggestions?</h4>
-        <div class="contact-section-line"></div>
+        <div class="break-line"></div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum
           tellus quam, id fermentum purus tempor at. Ut vel vehicula nunc. Nunc
-          vitae eros est. Nam sodales augue ut massa tempor malesuada.
+          vitae eros est. Nam sodales augue ut massa tempor malesuada. Nunc
+          vitae eros est.
         </p>
       </div>
-      <a href="/contact.html" class="contact-us-link" title="contact us page"
-        >Contact Us</a
-      >
+      <a href="/contact.html" class="contact-us-button" title="contact us page">
+        Contact Us
+      </a>
     </div>
 
     <footer>
       This project was coded by
-      <a href="https://github.com/marianacreis">Mariana Reis</a> and is open
-      sourced on
-      <a href="https://github.com/marianacreis/The-Baking-Nook">GitHub</a>
+      <a href="https://github.com/marianacreis" target="_blank">Mariana Reis</a>
+      and is open sourced on
+      <a href="https://github.com/marianacreis/The-Baking-Nook" target="_blank">
+        GitHub
+      </a>
     </footer>
   </body>
 </html>

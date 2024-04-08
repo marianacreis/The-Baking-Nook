@@ -29,17 +29,22 @@
     <title>Recipes - The Baking Nook</title>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary ps-5 pe-5 navbar-background"
-    >
-      <div class="container-fluid navbar-container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ps-5 pe-5">
+      <div class="container-fluid">
         <a class="navbar-brand" href="/"
           ><img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/150/original/Captura_de_ecrã_2024-03-21__às_18.09.00-removebg-preview.png?1711044713"
             alt="The Baking Nook Logo"
             width="250"
-            class="img-fluid"
-        /></a>
+            class="img-fluid d-none d-md-block"
+          />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/122/413/original/logo-small.png?1712586570"
+            class="small-logo img-fluid d-block d-md-none"
+            width="50"
+            alt=""
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -60,9 +65,9 @@
               <a class="nav-link active" href="/recipes.html">Recipes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/tips-and-tricks.html"
-                >Tips and Tricks</a
-              >
+              <a class="nav-link" href="/tips-and-tricks.html">
+                Tips and Tricks
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/contact.html">Contacts</a>
@@ -74,36 +79,66 @@
 
     <header class="secondary-pages-header">
       <h1>Recipes</h1>
-      <div></div>
+      <div class="line-break"></div>
     </header>
 
     <div class="container mt-4">
       <div class="row justify-content-center text-center">
         <div class="col-md-2">
-          <a href="#cakes" class="recipes-buttons">Cakes</a>
+          <a
+            href="#cakes"
+            title="cakes recipes page section"
+            class="recipes-buttons"
+          >
+            Cakes
+          </a>
         </div>
         <div class="col-md-2">
-          <a href="#cupcakes" class="recipes-buttons">Cupcakes</a>
+          <a
+            href="#cupcakes"
+            title="cupcakes recipes page section"
+            class="recipes-buttons"
+          >
+            Cupcakes
+          </a>
         </div>
         <div class="col-md-2">
-          <a href="#cookies" class="recipes-buttons">Cookies</a>
+          <a
+            href="#cookies"
+            title="cookies recipes page section"
+            class="recipes-buttons"
+          >
+            Cookies
+          </a>
         </div>
         <div class="col-md-2">
-          <a href="#bars-brownies" class="recipes-buttons">Bars and Brownies</a>
+          <a
+            href="#bars-brownies"
+            title="bard and brownies recipes page section"
+            class="recipes-buttons"
+          >
+            Bars and Brownies
+          </a>
         </div>
         <div class="col-md-2">
-          <a href="#pies" class="recipes-buttons">Pies</a>
+          <a
+            href="#pies"
+            title="pies recipes page section"
+            class="recipes-buttons"
+          >
+            Pies
+          </a>
         </div>
       </div>
     </div>
 
-    <div class="container mt-5" id="cakes">
+    <div class="container mt-5 recipe-full-container" id="cakes">
       <div class="row g-0 justify-content-center" id="chocolate-brioche-recipe">
         <div class="col-sm-3 recipes-images-container">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/777/original/Chocolate-Brioche-Babka.jpg?1711474451"
             alt="Chocolate Brioche Babka"
-            class="recipe-images"
+            class="img-fluid recipe-images"
           />
         </div>
         <div class="col-sm-7 recipe-title-container">
@@ -136,27 +171,27 @@
           <p class="recipe-description-title">Method</p>
         </div>
       </div>
-      <div class="ingredients-method-line"></div>
+      <div class="line-break"></div>
       <div class="row justify-content-center">
         <div class="col-sm-3 ingredients-list">
           <p>2 cups granulated sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tbsp cornstarch</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tsp baking powder</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp baking soda</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp salt</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ cup plant-based milk</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 Cups Granulated Sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
         </div>
         <div class="col-sm-7 mt-1 recipe-method">
           <p>
@@ -188,7 +223,7 @@
       </div>
     </div>
 
-    <div class="container mt-5" id="cakes">
+    <div class="container mt-5 recipe-full-container" id="cakes">
       <div
         class="row g-0 justify-content-center"
         id="chocolate-chip-banana-cake-recipe"
@@ -197,7 +232,7 @@
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/791/original/Chocolate-Chip-Banana-Cake.jpg?1711476820"
             alt="Chocolate Chip Banana Cake"
-            class="recipe-images"
+            class="img-fluid recipe-images"
           />
         </div>
         <div class="col-sm-7 recipe-title-container">
@@ -213,9 +248,9 @@
 
           <div class="time-serves-container">
             <span class="time-serves">Total Time | </span>
-            <span class="time-serves-details">1 hours 30 minutes</span>
+            <span class="time-serves-details">1 hours 15 minutes</span>
             <span class="time-serves">Serves |</span>
-            <span class="time-serves-details">20 slices</span>
+            <span class="time-serves-details">12 slices</span>
           </div>
         </div>
       </div>
@@ -229,27 +264,27 @@
           <p class="recipe-description-title">Method</p>
         </div>
       </div>
-      <div class="ingredients-method-line"></div>
+      <div class="line-break"></div>
       <div class="row justify-content-center">
         <div class="col-sm-3 ingredients-list">
           <p>2 cups granulated sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tbsp cornstarch</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tsp baking powder</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp baking soda</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp salt</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ cup plant-based milk</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 Cups Granulated Sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
         </div>
         <div class="col-sm-7 mt-1 recipe-method">
           <p>
@@ -280,7 +315,7 @@
       </div>
     </div>
 
-    <div class="container mt-5" id="bars-brownies">
+    <div class="container mt-5 recipe-full-container" id="bars-brownies">
       <div
         class="row g-0 justify-content-center"
         id="smores-banana-blondies-recipe"
@@ -289,7 +324,7 @@
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/796/original/smores-banana-blondie.jpg?1711476846"
             alt="Smores Banana Blondies"
-            class="recipe-images"
+            class="img-fluid recipe-images"
           />
         </div>
         <div class="col-sm-7 recipe-title-container">
@@ -305,9 +340,9 @@
 
           <div class="time-serves-container">
             <span class="time-serves">Total Time | </span>
-            <span class="time-serves-details">1 hours 30 minutes</span>
+            <span class="time-serves-details">1 hours 35 minutes</span>
             <span class="time-serves">Serves |</span>
-            <span class="time-serves-details">20 slices</span>
+            <span class="time-serves-details">15 slices</span>
           </div>
         </div>
       </div>
@@ -321,27 +356,27 @@
           <p class="recipe-description-title">Method</p>
         </div>
       </div>
-      <div class="ingredients-method-line"></div>
+      <div class="line-break"></div>
       <div class="row justify-content-center">
         <div class="col-sm-3 ingredients-list">
           <p>2 cups granulated sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tbsp cornstarch</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tsp baking powder</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp baking soda</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp salt</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ cup plant-based milk</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 Cups Granulated Sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
         </div>
         <div class="col-sm-7 mt-1 recipe-method">
           <p>
@@ -372,7 +407,7 @@
       </div>
     </div>
 
-    <div class="container mt-5" id="bars-brownies">
+    <div class="container mt-5 recipe-full-container" id="bars-brownies">
       <div
         class="row g-0 justify-content-center"
         id="yogurt-lemon-pie-bars-recipe"
@@ -381,7 +416,7 @@
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/790/original/Yogurt-Lemon-Pie-Bars.jpg?1711476814"
             alt="Yogurt Lemon Pie Bars"
-            class="recipe-images"
+            class="img-fluid recipe-images"
           />
         </div>
         <div class="col-sm-7 recipe-title-container">
@@ -413,27 +448,27 @@
           <p class="recipe-description-title">Method</p>
         </div>
       </div>
-      <div class="ingredients-method-line"></div>
+      <div class="line-break"></div>
       <div class="row justify-content-center">
         <div class="col-sm-3 ingredients-list">
           <p>2 cups granulated sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tbsp cornstarch</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tsp baking powder</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp baking soda</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp salt</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ cup plant-based milk</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 Cups Granulated Sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
         </div>
         <div class="col-sm-7 mt-1 recipe-method">
           <p>
@@ -465,13 +500,13 @@
       </div>
     </div>
 
-    <div class="container mt-5" id="pies">
+    <div class="container mt-5 recipe-full-container" id="pies">
       <div class="row g-0 justify-content-center" id="cherry-pie-recipe">
         <div class="col-sm-3 recipes-images-container">
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/793/original/Homemade-Cherry-Pie.jpg?1711476830"
             alt="Cherry Pie"
-            class="recipe-images"
+            class="img-fluid recipe-images"
           />
         </div>
         <div class="col-sm-7 recipe-title-container">
@@ -489,7 +524,7 @@
             <span class="time-serves">Total Time | </span>
             <span class="time-serves-details">1 hours 30 minutes</span>
             <span class="time-serves">Serves |</span>
-            <span class="time-serves-details">20 slices</span>
+            <span class="time-serves-details">8 slices</span>
           </div>
         </div>
       </div>
@@ -503,27 +538,27 @@
           <p class="recipe-description-title">Method</p>
         </div>
       </div>
-      <div class="ingredients-method-line"></div>
+      <div class="line-break"></div>
       <div class="row justify-content-center">
         <div class="col-sm-3 ingredients-list">
           <p>2 cups granulated sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tbsp cornstarch</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tsp baking powder</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp baking soda</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp salt</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ cup plant-based milk</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 Cups Granulated Sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
         </div>
         <div class="col-sm-7 mt-1 recipe-method">
           <p>
@@ -554,7 +589,7 @@
       </div>
     </div>
 
-    <div class="container mt-5" id="cookies">
+    <div class="container mt-5 recipe-full-container" id="cookies">
       <div
         class="row g-0 justify-content-center"
         id="strawberry-lemonade-macarons-recipe"
@@ -563,7 +598,7 @@
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/792/original/strawberry-lemonade-macarons.jpg?1711476825"
             alt="Strawberry Lemonade Macarons"
-            class="recipe-images"
+            class="img-fluid recipe-images"
           />
         </div>
         <div class="col-sm-7 recipe-title-container">
@@ -579,7 +614,7 @@
 
           <div class="time-serves-container">
             <span class="time-serves">Total Time | </span>
-            <span class="time-serves-details">1 hours 30 minutes</span>
+            <span class="time-serves-details">2 hours 20 minutes</span>
             <span class="time-serves">Serves |</span>
             <span class="time-serves-details">20 slices</span>
           </div>
@@ -595,27 +630,27 @@
           <p class="recipe-description-title">Method</p>
         </div>
       </div>
-      <div class="ingredients-method-line"></div>
+      <div class="line-break"></div>
       <div class="row justify-content-center">
         <div class="col-sm-3 ingredients-list">
           <p>2 cups granulated sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tbsp cornstarch</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tsp baking powder</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp baking soda</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp salt</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ cup plant-based milk</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 Cups Granulated Sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
         </div>
         <div class="col-sm-7 mt-1 recipe-method">
           <p>
@@ -646,7 +681,7 @@
       </div>
     </div>
 
-    <div class="container mt-5" id="cookies">
+    <div class="container mt-5 recipe-full-container" id="cookies">
       <div
         class="row g-0 justify-content-center"
         id="white-chocolate-chip-cookies-recipe"
@@ -655,7 +690,7 @@
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/794/original/White-Chocolate-Chip-Cookies.jpg?1711476835"
             alt="White Chocolate Chip Cookies"
-            class="recipe-images"
+            class="img-fluid recipe-images"
           />
         </div>
         <div class="col-sm-7 recipe-title-container">
@@ -673,7 +708,7 @@
             <span class="time-serves">Total Time | </span>
             <span class="time-serves-details">1 hours 30 minutes</span>
             <span class="time-serves">Serves |</span>
-            <span class="time-serves-details">20 slices</span>
+            <span class="time-serves-details">24 slices</span>
           </div>
         </div>
       </div>
@@ -687,27 +722,27 @@
           <p class="recipe-description-title">Method</p>
         </div>
       </div>
-      <div class="ingredients-method-line"></div>
+      <div class="line-break"></div>
       <div class="row justify-content-center">
         <div class="col-sm-3 ingredients-list">
           <p>2 cups granulated sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tbsp cornstarch</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tsp baking powder</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp baking soda</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp salt</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ cup plant-based milk</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 Cups Granulated Sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
         </div>
         <div class="col-sm-7 mt-1 recipe-method">
           <p>
@@ -738,7 +773,7 @@
       </div>
     </div>
 
-    <div class="container mt-5" id="cupcakes">
+    <div class="container mt-5 recipe-full-container" id="cupcakes">
       <div
         class="row g-0 justify-content-center"
         id="red-velvet-cupcakes-recipe"
@@ -747,7 +782,7 @@
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/120/795/original/vegan-red-velvetcupcakes.jpg?1711476840"
             alt="Vegan Red Velvet Cupcakes"
-            class="recipe-images"
+            class="img-fluid recipe-images"
           />
         </div>
         <div class="col-sm-7 recipe-title-container">
@@ -763,9 +798,9 @@
 
           <div class="time-serves-container">
             <span class="time-serves">Total Time | </span>
-            <span class="time-serves-details">1 hours 30 minutes</span>
+            <span class="time-serves-details">1 hours 0 minutes</span>
             <span class="time-serves">Serves |</span>
-            <span class="time-serves-details">20 slices</span>
+            <span class="time-serves-details">12 slices</span>
           </div>
         </div>
       </div>
@@ -779,27 +814,27 @@
           <p class="recipe-description-title">Method</p>
         </div>
       </div>
-      <div class="ingredients-method-line"></div>
+      <div class="line-break"></div>
       <div class="row justify-content-center">
         <div class="col-sm-3 ingredients-list">
           <p>2 cups granulated sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tbsp cornstarch</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>1 tsp baking powder</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp baking soda</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ tsp salt</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>½ cup plant-based milk</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 Cups Granulated Sugar</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
           <p>2 cups water</p>
-          <div class="ingredients-line-divider"></div>
+          <div class="line-break"></div>
         </div>
         <div class="col-sm-7 mt-1 recipe-method">
           <p>
@@ -832,9 +867,11 @@
 
     <footer>
       This project was coded by
-      <a href="https://github.com/marianacreis">Mariana Reis</a> and is open
-      sourced on
-      <a href="https://github.com/marianacreis/The-Baking-Nook">GitHub</a>
+      <a href="https://github.com/marianacreis" target="_blank">Mariana Reis</a>
+      and is open sourced on
+      <a href="https://github.com/marianacreis/The-Baking-Nook" target="_blank">
+        GitHub
+      </a>
     </footer>
   </body>
 </html>
